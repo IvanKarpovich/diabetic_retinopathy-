@@ -1,2 +1,17 @@
 # Diabetic retinopathy classification
-Image preprocessing and exploratory data analysis; Medical image classification using a convolutional neural network (CNN) and ResNet18.
+Image preprocessing and exploratory data analysis
+Medical image classification using a convolutional neural network (CNN) and ResNet18.
+
+Используется датасет со снимками глазного дна. Основная цель – научить модель определять тяжесть диабетической ретинопатии по снимку. В файле train.csv дана классификация снимков по следующим классам:
+1. Normal
+2. Mild
+3. Moderate
+4. Severe
+5. Proliferative
+
+План предстоящей работы:
+* Посмотрим на состав классов в данных (кого больше, кого меньше)
+* Определим код для обучения модели
+* Разобьем данные (изображения) на train/val/test
+* Воспользуемся как сверточной нейронной сетью, написанной в библиотеке PyTorch, так и редобученной моделью ResNet
+* Проведем трансформации изображений для того, чтобы выделить существенные детали и стандартизовать изображения
